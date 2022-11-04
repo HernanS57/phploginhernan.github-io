@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+$blue : rgb(117, 181, 255);
+
+body{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 62.5%;
+    background-color: darken($blue, 50%);
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darken($blue, 20%);
+    border-radius: 5px;
+    legend{
+        color: #fff;
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        padding: 1rem 2rem;
+        border: none;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+}
+
+.contenedor-inputs{
+    input{
+        height: 2.5rem;
+        border-radius: 5px;
+        padding: 0rem 0.5rem;
+    }
+}
+
+.boton{
+    background-color: lightblue;
+    width: 16rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.opciones{
+    margin: 1rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+}
+
+.alerta{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.error{
+    color: #fff;
+    background-color: #ff0000;
+    text-align: center;
+    padding: 1rem 0;
+    height: auto;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.exito{
+    color: #fff;
+    background-color: #15ff00;
+    text-align: center;
+    padding: 1rem 0;
+    height: auto;
+    font-size: 1rem;
+    border-radius: 5px;
+}
